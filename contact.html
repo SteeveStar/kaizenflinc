@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Kaizen FL | Luxury SUV Rentals</title>
+    <meta
+      name="description"
+      content="Contact Kaizen FL for luxury SUV rentals in Lauderhill, FL. Phone, email, and concierge support."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a class="logo" href="index.html">Kaizen <span>FL</span></a>
+        <nav class="nav-links">
+          <a href="fleet.html">Fleet</a>
+          <a href="booking.html">Booking</a>
+          <a href="service-area.html">Service Area</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          Menu
+        </button>
+        <div class="nav-actions">
+          <a class="btn btn-outline" href="fleet.html">View Fleet</a>
+          <a class="btn btn-primary" href="booking.html">Book Now</a>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="fleet.html">Fleet</a>
+        <a href="booking.html">Booking</a>
+        <a href="service-area.html">Service Area</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <div class="mobile-actions">
+          <a class="btn btn-outline" href="fleet.html">View Our Fleet</a>
+          <a class="btn btn-primary" href="booking.html">Book Your SUV</a>
+        </div>
+        <p class="mobile-phone">Call +1 347 536 0907</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section full">
+        <div class="container split">
+          <div class="reveal">
+            <h1 class="section-title">Contact</h1>
+            <p class="section-subtitle">
+              Reach our concierge team for bookings, availability, and premium
+              service.
+            </p>
+            <div class="surface" style="margin-top: 24px;">
+              <p class="section-subtitle">Phone: +1 347 536 0907</p>
+              <p class="section-subtitle">Email: reservations@kaizenfl.com</p>
+              <p class="section-subtitle">Business Hours: Mon-Sun, 8:00 AM - 8:00 PM</p>
+            </div>
+          </div>
+          <div class="surface reveal">
+            <form class="form-grid" id="contact-form" enctype="multipart/form-data">
+              <div>
+                <label for="contact-name">Full name</label>
+                <input id="contact-name" name="contact-name" type="text" />
+              </div>
+              <div>
+                <label for="contact-email">Email</label>
+                <input id="contact-email" name="contact-email" type="email" />
+              </div>
+              <div>
+                <label for="contact-phone">Phone</label>
+                <input id="contact-phone" name="contact-phone" type="tel" />
+              </div>
+              <div>
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="contact-message"></textarea>
+              </div>
+              <div>
+                <label for="license">Driver's license upload</label>
+                <input id="license" name="license" type="file" accept="image/*,application/pdf" />
+              </div>
+              <p id="license-status" class="section-subtitle"></p>
+              <div>
+                <button class="btn btn-primary" type="submit" disabled>
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section full">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <h2 class="section-title">Visit Us</h2>
+              <p class="section-subtitle">Dark-mode map placeholder for business location.</p>
+            </div>
+          </div>
+          <div class="map-embed reveal">
+            <iframe
+              title="Kaizen FL Location"
+              src="https://www.google.com/maps?q=Lauderhill+FL&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Kaizen FL Inc. Professional support for premium SUV rentals. Phone: +1 347 536 0907.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

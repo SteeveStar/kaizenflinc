@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Serve Kaizen FL site",
+			"type": "shell",
+			"command": "php",
+			"args": [
+				"-S",
+				"127.0.0.1:5500",
+				"-t",
+				"."
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Serve Kaizen FL site (Python)",
+			"type": "shell",
+			"command": "/Users/steevensonglezil/Kaizen FL /.venv/bin/python",
+			"args": [
+				"-m",
+				"http.server",
+				"5500"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

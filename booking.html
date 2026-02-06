@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book a Luxury SUV | Kaizen FL</title>
+    <meta
+      name="description"
+      content="Book a luxury SUV in Lauderhill, Florida. Select vehicle, dates, and add-ons with secure confirmation."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a class="logo" href="index.html">Kaizen <span>FL</span></a>
+        <nav class="nav-links">
+          <a href="fleet.html">Fleet</a>
+          <a href="booking.html">Booking</a>
+          <a href="service-area.html">Service Area</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          Menu
+        </button>
+        <div class="nav-actions">
+          <a class="btn btn-outline" href="fleet.html">View Fleet</a>
+          <a class="btn btn-primary" href="contact.html">Concierge Support</a>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="fleet.html">Fleet</a>
+        <a href="booking.html">Booking</a>
+        <a href="service-area.html">Service Area</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <div class="mobile-actions">
+          <a class="btn btn-outline" href="fleet.html">View Our Fleet</a>
+          <a class="btn btn-primary" href="booking.html">Book Your SUV</a>
+        </div>
+        <p class="mobile-phone">Call +1 347 536 0907</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section full">
+        <div class="container split">
+          <div class="reveal">
+            <h1 class="section-title">Book a Car</h1>
+            <p class="section-subtitle">
+              Select your luxury SUV, choose dates, and confirm in minutes.
+            </p>
+            <ul class="feature-list">
+              <li><span>Secure</span>Confirmation with premium service</li>
+              <li><span>Flexible</span>Daily, weekly, and monthly rentals</li>
+              <li><span>Premium</span>Add-ons for every journey</li>
+            </ul>
+          </div>
+          <div class="surface reveal">
+            <form class="form-grid" id="booking-form" enctype="multipart/form-data">
+              <div>
+                <label for="vehicle">Vehicle selection</label>
+                <select id="vehicle" name="vehicle">
+                  <option>2026 GMC Yukon XL Denali</option>
+                  <option>2024 Cadillac Escalade ESV</option>
+                </select>
+              </div>
+              <div>
+                <label for="pickup">Pickup date and time</label>
+                <input id="pickup" name="pickup" type="datetime-local" />
+              </div>
+              <div>
+                <label for="return">Return date and time</label>
+                <input id="return" name="return" type="datetime-local" />
+              </div>
+              <div>
+                <label for="city">Pickup city</label>
+                <select id="city" name="city">
+                  <option>Lauderhill</option>
+                  <option>Fort Lauderdale</option>
+                  <option>Sunrise</option>
+                  <option>Plantation</option>
+                  <option>Tamarac</option>
+                  <option>Coral Springs</option>
+                  <option>Hollywood</option>
+                  <option>Davie</option>
+                  <option>Pembroke Pines</option>
+                  <option>Other Broward County</option>
+                  <option>Miami-Dade (optional)</option>
+                </select>
+              </div>
+              <div>
+                <label for="duration">Rental duration</label>
+                <select id="duration" name="duration">
+                  <option>Daily</option>
+                  <option>Weekly</option>
+                  <option>Monthly</option>
+                </select>
+              </div>
+              <div>
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" placeholder="Client name" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="name@email.com" />
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="+1 347 536 0907" />
+              </div>
+              <div>
+                <label for="addons">Add-ons</label>
+                <select id="addons" name="addons">
+                  <option>None</option>
+                  <option>Extra mileage package</option>
+                  <option>Late return flexibility</option>
+                  <option>Premium cleaning</option>
+                </select>
+              </div>
+              <div>
+                <label for="notes">Special requests</label>
+                <textarea id="notes" name="notes" placeholder="Tell us about your trip"></textarea>
+              </div>
+              <div>
+                <label for="booking-license">Driver's license upload</label>
+                <input
+                  id="booking-license"
+                  name="booking-license"
+                  type="file"
+                  accept="image/*,application/pdf"
+                />
+              </div>
+              <p id="booking-license-status" class="section-subtitle"></p>
+              <div>
+                <button class="btn btn-primary" type="submit" disabled>
+                  Secure Confirmation
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Kaizen FL Inc. Secure booking with premium concierge support. Phone: +1 347 536 0907.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
