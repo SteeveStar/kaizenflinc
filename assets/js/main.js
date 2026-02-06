@@ -3,8 +3,7 @@ const contactForm = document.querySelector("#contact-form");
 const licenseStatus = document.querySelector("#license-status");
 const bookingForm = document.querySelector("#booking-form");
 const bookingLicenseStatus = document.querySelector("#booking-license-status");
-const menuToggle = document.querySelector(".menu-toggle");
-const mobileMenu = document.querySelector(".mobile-menu");
+const menuToggles = document.querySelectorAll(".menu-toggle");
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -20,19 +19,26 @@ const observer = new IntersectionObserver(
 
 reveals.forEach((item) => observer.observe(item));
 
-if (menuToggle && mobileMenu) {
-  menuToggle.addEventListener("click", () => {
-    const isOpen = mobileMenu.classList.toggle("open");
-    menuToggle.setAttribute("aria-expanded", String(isOpen));
+menuToggles.forEach((toggle) => {
+  const navbar = toggle.closest(".navbar");
+  const menu = navbar ? navbar.querySelector(".mobile-menu") : null;
+
+  if (!menu) {
+    return;
+  }
+
+  toggle.addEventListener("click", () => {
+    const isOpen = menu.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", String(isOpen));
   });
 
-  mobileMenu.addEventListener("click", (event) => {
+  menu.addEventListener("click", (event) => {
     if (event.target.closest("a")) {
-      mobileMenu.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
+      menu.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
     }
   });
-}
+});
 
 function setSubmitState(form, isEnabled) {
   const submitBtn = form.querySelector("button[type='submit']");
